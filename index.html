@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="tr">
   <head>
@@ -67,6 +68,16 @@
       .reveal-element.active {
         opacity: 1;
         transform: translateY(0);
+      }
+
+      /* Hide default cursor on non-touch devices for custom cursor */
+      @media (pointer: fine) {
+        body {
+          cursor: none;
+        }
+        a, button, input, textarea, select {
+          cursor: none;
+        }
       }
     </style>
   <script type="importmap">
